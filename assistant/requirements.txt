@@ -8,3 +8,5 @@ khaya>=0.3
 reportlab>=4.0
 pillow>=10.0
 python-multipart>=0.0.9
+fonttools>=4.40
+openpyxl>=3.1
