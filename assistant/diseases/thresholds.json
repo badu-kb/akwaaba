@@ -1,0 +1,24 @@
+{
+  "_about": "When the district desk raises a flag, and where each rule comes from. 'sourced' rules are taken from Ghana's Technical Guidelines for Integrated Disease Surveillance and Response (Ministry of Health, National Surveillance Unit, 2002), the edition we were able to read. Ghana published a newer edition in 2022 that we have not yet read, so the district must confirm or correct every line before the desk is used for real. 'unsourced' rules are conditions WHO AFRO's later guidance treats as immediately reportable; we have not confirmed them for Ghana. 'own' rules are Akwaaba's prompts and are not guideline thresholds.",
+  "source": "Technical Guidelines for IDSR in Ghana, Ministry of Health, 2002 (Table 4, Table 6, Section 4.1 and the disease sections)",
+  "source_url": "https://policyvault.africa/wp-content/uploads/policy/GHA28.pdf",
+  "verify_hours": 48,
+  "verify_say": "The 2002 guidelines give 48 hours for an immediately reportable case to reach the district and for a suspected outbreak to be investigated.",
+  "alert_single_case": {
+    "sourced": ["cholera", "measles", "afp", "yellow_fever", "neonatal_tetanus", "vhf"],
+    "sourced_say": "Alert threshold in the 2002 guidelines (Table 6): 1 suspected case. Report immediately and investigate.",
+    "unsourced": ["rabies", "mpox", "anthrax", "maternal_death", "meningitis"],
+    "unsourced_say": "Treated here as immediately reportable. Not yet confirmed against Ghana's guidelines.",
+    "cluster_say": "An unexplained cluster of illness or deaths calls for an outbreak investigation (2002 guidelines, Section 4.1)."
+  },
+  "zone_week": [
+    {"disease": "meningitis", "cases": 2, "level": "alert", "say": "Meningitis alert threshold for a population under 30,000 (Table 6): 2 cases in 1 week."},
+    {"disease": "meningitis", "cases": 5, "level": "action", "say": "Meningitis epidemic threshold for a population under 30,000 (Table 6): 5 cases in 1 week."},
+    {"disease": "measles", "cases": 6, "level": "action", "say": "Suspected measles outbreak (2002 guidelines): more than 5 cases reported by a health facility in a week."}
+  ],
+  "own": {
+    "spread": {"zones": 2, "say": "The same condition has been reported from two or more zones this week. This is Akwaaba's own prompt, not a guideline threshold: check whether the cases are linked."}
+  },
+  "weekly_deadlines": {"facility": "Tuesday", "district": "Thursday", "region": "Friday",
+                       "say": "Weekly reports are due from health facilities on the Tuesday of the following week, from the district on Thursday and from the region on Friday (2002 guidelines, Table 4)."}
+}

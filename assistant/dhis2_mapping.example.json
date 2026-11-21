@@ -1,0 +1,16 @@
+{
+  "_about": "Placeholder ids. Replace every one with the real id from the district's DHIS2 (DHIMS2) before use. An id is 11 characters: a letter followed by ten letters or digits.",
+  "dataSet": "AkwIDSRwk01",
+  "orgUnit": "SampleDist1",
+  "categoryOptionCombo": "",
+  "dataElements": {
+    "cholera": "AkwCholera1",
+    "measles": "AkwMeasles1",
+    "meningitis": "AkwMeningi1",
+    "afp": "AkwAFPcase1",
+    "yellow_fever": "AkwYellowF1",
+    "rabies": "AkwRabies01",
+    "neonatal_tetanus": "AkwNNTcase1",
+    "maternal_death": "AkwMatDeat1"
+  }
+}

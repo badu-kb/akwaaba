@@ -1,0 +1,9 @@
+.env
+*.db
+*.jsonl
+ngrok.log
+__pycache__/
+.pytest_cache/
+tests/
+evals/
+flows/_old_teacher_forms/

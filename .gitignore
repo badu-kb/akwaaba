@@ -1,0 +1,15 @@
+# secrets and local data: never commit
+.env
+*.db
+*.sqlite*
+usage_log.jsonl
+*.log
+flows/registry.json
+evals/results/scored/
+# python
+__pycache__/
+.pytest_cache/
+*.pyc
+.venv/
+# mac
+.DS_Store

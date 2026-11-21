@@ -1,0 +1,41 @@
+{
+ "__note": "Placeholder layout for a CHPS monthly return. Before the pilot, replace the fields, labels and redact_bands with the district's real register and monthly return forms. Keys must stay lowercase_with_underscores.",
+ "id": "chps_monthly_draft",
+ "title": "Monthly return (draft)",
+ "placeholder": true,
+ "sections": [
+  {"title": "Outpatients", "fields": [
+   {"key": "opd_total", "label": "OPD attendance, all ages"},
+   {"key": "opd_under5", "label": "OPD attendance, under 5"}]},
+  {"title": "Malaria", "fields": [
+   {"key": "malaria_suspected", "label": "Suspected malaria"},
+   {"key": "malaria_tested", "label": "Tested (RDT)"},
+   {"key": "malaria_positive", "label": "Tested positive"}]},
+  {"title": "Maternal health", "fields": [
+   {"key": "anc_new", "label": "ANC new registrants"},
+   {"key": "anc_visits", "label": "ANC visits, all"},
+   {"key": "pnc_visits", "label": "Postnatal visits"},
+   {"key": "deliveries", "label": "Deliveries attended"}]},
+  {"title": "Child health", "fields": [
+   {"key": "cwc_weighed", "label": "Children weighed"},
+   {"key": "penta1", "label": "Penta 1 given"},
+   {"key": "penta3", "label": "Penta 3 given"},
+   {"key": "mr1", "label": "Measles-Rubella 1 given"}]},
+  {"title": "Family planning", "fields": [
+   {"key": "fp_new", "label": "New acceptors"},
+   {"key": "fp_continuing", "label": "Continuing users"}]},
+  {"title": "Community work", "fields": [
+   {"key": "home_visits", "label": "Home visits"},
+   {"key": "health_talks", "label": "Health talks given"},
+   {"key": "referrals", "label": "Referrals to a facility"}]}
+ ],
+ "checks": [
+  ["malaria_positive", "<=", "malaria_tested", "More positive malaria results than tests"],
+  ["malaria_tested", "<=", "malaria_suspected", "More malaria tests than suspected cases"],
+  ["opd_under5", "<=", "opd_total", "More under-5 attendances than all attendances"],
+  ["anc_new", "<=", "anc_visits", "More new ANC registrants than ANC visits"]
+ ],
+ "jump": {"ratio": 1.5, "min_change": 10},
+ "redact_bands": [],
+ "keep_words": []
+}

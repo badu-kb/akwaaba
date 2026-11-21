@@ -1,0 +1,150 @@
+{
+ "_about": "Follow-up schedules. Child immunisation follows the Ghana Health Service routine schedule (ghs.gov.gh/immunisation, checked November 2026; the page leaves the first Penta visit unlabelled, it is given here as 6 weeks). Antenatal contacts follow the WHO 8-contact model. Postnatal checks follow WHO timing (within 48 hours, day 3, day 7, week 6). The district must confirm all three before the pilot. Minimum gaps: when a dose in the Penta, OPV, PCV, Rota or malaria vaccine series is given late, the next one is scheduled at least 28 days after it (the 'after' field on a visit). Catch-up rules beyond this must come from the district.",
+ "child": {
+  "title": "Child immunisation",
+  "anchor": "date of birth",
+  "close_after_days": 790,
+  "visits": [
+   {
+    "key": "birth",
+    "days": 0,
+    "what": "BCG, OPV 0, Hep B birth dose"
+   },
+   {
+    "key": "w6",
+    "days": 42,
+    "what": "Penta 1, OPV 1, PCV 1, Rota 1"
+   },
+   {
+    "key": "w10",
+    "days": 70,
+    "what": "Penta 2, OPV 2, PCV 2, Rota 2",
+    "after": {
+     "key": "w6",
+     "gap": 28
+    }
+   },
+   {
+    "key": "w14",
+    "days": 98,
+    "what": "Penta 3, OPV 3, PCV 3, Rota 3, IPV 1",
+    "after": {
+     "key": "w10",
+     "gap": 28
+    }
+   },
+   {
+    "key": "m6",
+    "days": 182,
+    "what": "Vitamin A, malaria vaccine 1"
+   },
+   {
+    "key": "m7",
+    "days": 213,
+    "what": "Malaria vaccine 2, IPV 2",
+    "after": {
+     "key": "m6",
+     "gap": 28
+    }
+   },
+   {
+    "key": "m9",
+    "days": 274,
+    "what": "MR 1, yellow fever, malaria vaccine 3",
+    "after": {
+     "key": "m7",
+     "gap": 28
+    }
+   },
+   {
+    "key": "m12",
+    "days": 365,
+    "what": "Vitamin A"
+   },
+   {
+    "key": "m18",
+    "days": 548,
+    "what": "MR 2, MenA, malaria vaccine 4, vitamin A, bed net"
+   },
+   {
+    "key": "m24",
+    "days": 730,
+    "what": "Vitamin A"
+   }
+  ]
+ },
+ "pregnancy": {
+  "title": "Antenatal care",
+  "anchor": "start of pregnancy (from the due date or weeks pregnant)",
+  "close_after_days": 294,
+  "visits": [
+   {
+    "key": "anc12",
+    "days": 84,
+    "what": "ANC contact (12 weeks)"
+   },
+   {
+    "key": "anc20",
+    "days": 140,
+    "what": "ANC contact (20 weeks)"
+   },
+   {
+    "key": "anc26",
+    "days": 182,
+    "what": "ANC contact (26 weeks)"
+   },
+   {
+    "key": "anc30",
+    "days": 210,
+    "what": "ANC contact (30 weeks)"
+   },
+   {
+    "key": "anc34",
+    "days": 238,
+    "what": "ANC contact (34 weeks)"
+   },
+   {
+    "key": "anc36",
+    "days": 252,
+    "what": "ANC contact (36 weeks), birth plan"
+   },
+   {
+    "key": "anc38",
+    "days": 266,
+    "what": "ANC contact (38 weeks)"
+   },
+   {
+    "key": "anc40",
+    "days": 280,
+    "what": "ANC contact (40 weeks), due date"
+   }
+  ]
+ },
+ "postnatal": {
+  "title": "Postnatal care",
+  "anchor": "date of delivery",
+  "close_after_days": 56,
+  "visits": [
+   {
+    "key": "d1",
+    "days": 1,
+    "what": "Postnatal check within 48 hours"
+   },
+   {
+    "key": "d3",
+    "days": 3,
+    "what": "Postnatal check, day 3"
+   },
+   {
+    "key": "d7",
+    "days": 7,
+    "what": "Postnatal home visit, day 7"
+   },
+   {
+    "key": "w6",
+    "days": 42,
+    "what": "6-week check, mother and baby"
+   }
+  ]
+ }
+}

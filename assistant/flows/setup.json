@@ -1,0 +1,90 @@
+{
+ "version": "7.3",
+ "screens": [
+  {
+   "id": "SETUP",
+   "title": "Akwaaba",
+   "terminal": true,
+   "success": true,
+   "layout": {
+    "type": "SingleColumnLayout",
+    "children": [
+     {
+      "type": "TextHeading",
+      "text": "Welcome to Akwaaba"
+     },
+     {
+      "type": "TextBody",
+      "text": "Set up once and every answer fits your work in community health. It takes about 20 seconds."
+     },
+     {
+      "type": "RadioButtonsGroup",
+      "name": "lang",
+      "label": "Reply to me in",
+      "required": true,
+      "data-source": [
+       {
+        "id": "en",
+        "title": "English"
+       },
+       {
+        "id": "tw",
+        "title": "Twi",
+        "description": "Asante Twi"
+       },
+       {
+        "id": "ee",
+        "title": "Ewe"
+       }
+      ],
+      "init-value": "en"
+     },
+     {
+      "type": "Dropdown",
+      "name": "detail",
+      "label": "Your role",
+      "required": false,
+      "data-source": [
+       {
+        "id": "hr_cho",
+        "title": "Community health officer"
+       },
+       {
+        "id": "hr_chn",
+        "title": "Community health nurse"
+       },
+       {
+        "id": "hr_chv",
+        "title": "Health volunteer"
+       },
+       {
+        "id": "hr_mw",
+        "title": "Midwife"
+       }
+      ]
+     },
+     {
+      "type": "TextInput",
+      "name": "town",
+      "label": "Town or district",
+      "input-type": "text",
+      "required": false,
+      "helper-text": "Optional, e.g. Ho or Hohoe"
+     },
+     {
+      "type": "Footer",
+      "label": "Start",
+      "on-click-action": {
+       "name": "complete",
+       "payload": {
+        "lang": "${form.lang}",
+        "detail": "${form.detail}",
+        "town": "${form.town}"
+       }
+      }
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,29 @@
+# Render.com alternative: New > Blueprint, point it at this folder's repo.
+services:
+  - type: web
+    name: akwaaba
+    runtime: docker
+    region: frankfurt
+    plan: starter            # needs a paid plan for the persistent disk
+    healthCheckPath: /healthz
+    disk:
+      name: akwaaba-data
+      mountPath: /data
+      sizeGB: 1
+    envVars:
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: META_ACCESS_TOKEN
+        sync: false
+      - key: META_PHONE_NUMBER_ID
+        sync: false
+      - key: META_VERIFY_TOKEN
+        sync: false
+      - key: META_APP_SECRET
+        sync: false
+      - key: PUBLIC_BASE_URL
+        sync: false
+      - key: KHAYA_API_KEY
+        sync: false
+      - key: DASHBOARD_KEY
+        sync: false

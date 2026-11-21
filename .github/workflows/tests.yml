@@ -1,0 +1,23 @@
+name: tests
+on:
+  push:
+  pull_request:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: assistant
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: System packages (OCR for register photos, ffmpeg for voice)
+        run: sudo apt-get update && sudo apt-get install -y tesseract-ocr ffmpeg
+      - name: Python packages
+        run: pip install -r requirements.txt pytest
+      - name: Emergency red-flag check (fails on any missed urgent case)
+        run: python evals/run_red_flags.py
+      - name: Automated tests
+        run: python -m pytest -q

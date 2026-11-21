@@ -1,0 +1,160 @@
+{
+  "version": "7.3",
+  "screens": [
+    {
+      "id": "CHECK",
+      "title": "Danger signs",
+      "terminal": true,
+      "success": true,
+      "layout": {
+        "type": "SingleColumnLayout",
+        "children": [
+          {
+            "type": "TextHeading",
+            "text": "Check danger signs"
+          },
+          {
+            "type": "TextBody",
+            "text": "Tick everything you see. Please don't enter names."
+          },
+          {
+            "type": "RadioButtonsGroup",
+            "name": "who",
+            "label": "Who is it?",
+            "required": true,
+            "data-source": [
+              {
+                "id": "newborn",
+                "title": "Newborn",
+                "description": "Under 2 months"
+              },
+              {
+                "id": "child",
+                "title": "Young child",
+                "description": "2 months to 5 years"
+              },
+              {
+                "id": "older",
+                "title": "Older child or adult"
+              },
+              {
+                "id": "pregnant",
+                "title": "Pregnant woman"
+              }
+            ]
+          },
+          {
+            "type": "CheckboxGroup",
+            "name": "signs",
+            "label": "Signs you see",
+            "required": true,
+            "data-source": [
+              {
+                "id": "cant_drink",
+                "title": "Can't drink or breastfeed"
+              },
+              {
+                "id": "vomits_all",
+                "title": "Vomits everything"
+              },
+              {
+                "id": "convulsions",
+                "title": "Convulsions or fits"
+              },
+              {
+                "id": "unconscious",
+                "title": "Very sleepy or unconscious"
+              },
+              {
+                "id": "breathing",
+                "title": "Fast or difficult breathing"
+              },
+              {
+                "id": "chest_in",
+                "title": "Chest pulls in when breathing"
+              },
+              {
+                "id": "stiff_neck",
+                "title": "Fever with stiff neck"
+              },
+              {
+                "id": "dehydrated",
+                "title": "Sunken eyes, very dry, weak"
+              },
+              {
+                "id": "bleeding",
+                "title": "Heavy bleeding"
+              },
+              {
+                "id": "headache_vision",
+                "title": "Bad headache, blurry vision"
+              },
+              {
+                "id": "no_movement",
+                "title": "Baby in womb not moving"
+              },
+              {
+                "id": "newborn_temp",
+                "title": "Newborn very cold or hot"
+              },
+              {
+                "id": "high_fever",
+                "title": "High fever"
+              },
+              {
+                "id": "diarrhoea",
+                "title": "Diarrhoea"
+              },
+              {
+                "id": "blood_stool",
+                "title": "Blood in stool"
+              },
+              {
+                "id": "swelling",
+                "title": "Swollen face, hands or feet"
+              },
+              {
+                "id": "yellow",
+                "title": "Yellow eyes or skin"
+              },
+              {
+                "id": "cough_2w",
+                "title": "Cough for 2 weeks or more"
+              },
+              {
+                "id": "pain",
+                "title": "Severe pain"
+              }
+            ]
+          },
+          {
+            "type": "TextInput",
+            "name": "days",
+            "label": "For how many days?",
+            "input-type": "number",
+            "required": false
+          },
+          {
+            "type": "TextArea",
+            "name": "notes",
+            "label": "Anything else?",
+            "required": false
+          },
+          {
+            "type": "Footer",
+            "label": "Check now",
+            "on-click-action": {
+              "name": "complete",
+              "payload": {
+                "who": "${form.who}",
+                "signs": "${form.signs}",
+                "days": "${form.days}",
+                "notes": "${form.notes}"
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

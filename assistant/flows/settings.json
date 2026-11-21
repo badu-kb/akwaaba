@@ -1,0 +1,173 @@
+{
+ "version": "7.3",
+ "screens": [
+  {
+   "id": "SETTINGS",
+   "title": "Settings",
+   "terminal": true,
+   "success": true,
+   "data": {
+    "intro": {
+     "type": "string",
+     "__example__": "Change your language, role or voice replies, then tap Save."
+    },
+    "lang_label": {
+     "type": "string",
+     "__example__": "Reply to me in"
+    },
+    "role_label": {
+     "type": "string",
+     "__example__": "Your role"
+    },
+    "voice_label": {
+     "type": "string",
+     "__example__": "Answers"
+    },
+    "listen_title": {
+     "type": "string",
+     "__example__": "Listen and read"
+    },
+    "listen_desc": {
+     "type": "string",
+     "__example__": "A voice note first, with the text underneath"
+    },
+    "read_title": {
+     "type": "string",
+     "__example__": "Read only"
+    },
+    "read_desc": {
+     "type": "string",
+     "__example__": "Text only, no voice notes"
+    },
+    "save": {
+     "type": "string",
+     "__example__": "Save"
+    },
+    "lang": {
+     "type": "string",
+     "__example__": "en"
+    },
+    "role": {
+     "type": "string",
+     "__example__": "none"
+    },
+    "voice": {
+     "type": "string",
+     "__example__": "read"
+    },
+    "voice_options": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "id": {
+        "type": "string"
+       },
+       "title": {
+        "type": "string"
+       },
+       "description": {
+        "type": "string"
+       }
+      }
+     },
+     "__example__": [
+      {
+       "id": "listen",
+       "title": "Listen and read",
+       "description": "A voice note first"
+      },
+      {
+       "id": "read",
+       "title": "Read only",
+       "description": "Text only"
+      }
+     ]
+    },
+    "roles": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "id": {
+        "type": "string"
+       },
+       "title": {
+        "type": "string"
+       }
+      }
+     },
+     "__example__": [
+      {
+       "id": "hr_cho",
+       "title": "Community health officer"
+      },
+      {
+       "id": "none",
+       "title": "Not set"
+      }
+     ]
+    }
+   },
+   "layout": {
+    "type": "SingleColumnLayout",
+    "children": [
+     {
+      "type": "TextBody",
+      "text": "${data.intro}"
+     },
+     {
+      "type": "RadioButtonsGroup",
+      "name": "lang",
+      "label": "${data.lang_label}",
+      "required": true,
+      "data-source": [
+       {
+        "id": "en",
+        "title": "English"
+       },
+       {
+        "id": "tw",
+        "title": "Twi",
+        "description": "Asante Twi"
+       },
+       {
+        "id": "ee",
+        "title": "Ewe"
+       }
+      ],
+      "init-value": "${data.lang}"
+     },
+     {
+      "type": "Dropdown",
+      "name": "role",
+      "label": "${data.role_label}",
+      "required": true,
+      "data-source": "${data.roles}",
+      "init-value": "${data.role}"
+     },
+     {
+      "type": "RadioButtonsGroup",
+      "name": "voice",
+      "label": "${data.voice_label}",
+      "required": true,
+      "data-source": "${data.voice_options}",
+      "init-value": "${data.voice}"
+     },
+     {
+      "type": "Footer",
+      "label": "${data.save}",
+      "on-click-action": {
+       "name": "complete",
+       "payload": {
+        "lang": "${form.lang}",
+        "role": "${form.role}",
+        "voice": "${form.voice}"
+       }
+      }
+     }
+    ]
+   }
+  }
+ ]
+}

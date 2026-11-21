@@ -1,0 +1,19 @@
+{
+ "_about": "PLACEHOLDER minimum and maximum stock levels for a CHPS compound, in the units counted on the shelf. Ghana uses a max-min system; replace these with the district's own levels before the pilot.",
+ "placeholder": true,
+ "items": [
+  {"key": "rdt", "label": "Malaria RDTs", "unit": "tests", "aliases": ["rdt", "rdts", "malaria test", "mrdt"], "min": 50, "max": 150},
+  {"key": "al", "label": "Artemether-lumefantrine (AL)", "unit": "packs", "aliases": ["al", "act", "acts", "coartem", "artemether"], "min": 30, "max": 90},
+  {"key": "ors", "label": "ORS sachets", "unit": "sachets", "aliases": ["ors", "oral rehydration"], "min": 60, "max": 180},
+  {"key": "zinc", "label": "Zinc tablets", "unit": "tablets", "aliases": ["zinc"], "min": 100, "max": 300},
+  {"key": "amox", "label": "Amoxicillin dispersible", "unit": "tablets", "aliases": ["amoxicillin", "amox", "amoxyl"], "min": 100, "max": 300},
+  {"key": "pcm", "label": "Paracetamol", "unit": "tablets", "aliases": ["paracetamol", "pcm", "para"], "min": 200, "max": 600},
+  {"key": "iron", "label": "Iron and folic acid", "unit": "tablets", "aliases": ["iron", "folic", "ifa", "fefol"], "min": 200, "max": 600},
+  {"key": "sp", "label": "SP for IPTp", "unit": "doses", "aliases": ["sp", "iptp", "fansidar"], "min": 20, "max": 60},
+  {"key": "condom", "label": "Male condoms", "unit": "pieces", "aliases": ["condom", "condoms"], "min": 100, "max": 300},
+  {"key": "pills", "label": "Oral contraceptive pills", "unit": "cycles", "aliases": ["pill", "pills", "coc", "microgynon"], "min": 20, "max": 60},
+  {"key": "inject", "label": "Injectable contraceptive", "unit": "doses", "aliases": ["injectable", "depo", "sayana", "dmpa"], "min": 20, "max": 60},
+  {"key": "implant", "label": "Contraceptive implants", "unit": "pieces", "aliases": ["implant", "implants", "jadelle", "implanon"], "min": 5, "max": 15},
+  {"key": "vita", "label": "Vitamin A capsules", "unit": "capsules", "aliases": ["vitamin a", "vit a", "vita"], "min": 50, "max": 150}
+ ]
+}

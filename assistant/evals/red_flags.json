@@ -1,0 +1,300 @@
+{
+ "__about": "Test set for the emergency fast-path (safety.py). Built from WHO IMCI general danger signs, Ghana Health Service maternal and newborn danger signs, and common community emergencies. 'urgent' messages MUST show the emergency card (target: 100%). 'routine' messages should not (target: 90% or more). Written by Claude for the prototype; a Ghanaian clinician should review and extend it, including Twi and Ewe phrasings, before the pilot.",
+ "urgent": [
+  {
+   "group": "child",
+   "text": "A 2 year old had a fit and has a fever"
+  },
+  {
+   "group": "child",
+   "text": "The baby is convulsing right now"
+  },
+  {
+   "group": "child",
+   "text": "Child of 3 is very sleepy and I can't wake him properly"
+  },
+  {
+   "group": "child",
+   "text": "My neighbour's child is unconscious after high fever"
+  },
+  {
+   "group": "child",
+   "text": "Boy aged 4 vomits everything he eats or drinks since morning"
+  },
+  {
+   "group": "child",
+   "text": "toddler not able to drink or breastfeed"
+  },
+  {
+   "group": "child",
+   "text": "child is breathing very fast and the chest is pulling in"
+  },
+  {
+   "group": "child",
+   "text": "chest indrawing in a 10 month old with cough"
+  },
+  {
+   "group": "child",
+   "text": "child lethargic with sunken eyes and diarrhoea for 3 days"
+  },
+  {
+   "group": "child",
+   "text": "Girl 5 years, fever and stiff neck"
+  },
+  {
+   "group": "child",
+   "text": "child's lips are blue"
+  },
+  {
+   "group": "child",
+   "text": "very pale palms and breathless, maybe severe anaemia"
+  },
+  {
+   "group": "child",
+   "text": "child swallowed kerosene"
+  },
+  {
+   "group": "child",
+   "text": "small boy drank bleach by mistake"
+  },
+  {
+   "group": "child",
+   "text": "child fell into the well, pulled out not breathing"
+  },
+  {
+   "group": "newborn",
+   "text": "newborn not sucking since yesterday"
+  },
+  {
+   "group": "newborn",
+   "text": "3 day old baby is cold to touch and not feeding well"
+  },
+  {
+   "group": "newborn",
+   "text": "Newborn has fever, 5 days old"
+  },
+  {
+   "group": "newborn",
+   "text": "baby yellow up to the palms and soles"
+  },
+  {
+   "group": "newborn",
+   "text": "redness spreading around the cord with pus"
+  },
+  {
+   "group": "newborn",
+   "text": "newborn grunting and breathing fast"
+  },
+  {
+   "group": "newborn",
+   "text": "the baby was born small and is not moving much"
+  },
+  {
+   "group": "maternal",
+   "text": "Pregnant woman bleeding from the vagina at 7 months"
+  },
+  {
+   "group": "maternal",
+   "text": "heavy bleeding after delivery"
+  },
+  {
+   "group": "maternal",
+   "text": "woman delivered at home, placenta not out after 1 hour"
+  },
+  {
+   "group": "maternal",
+   "text": "pregnant with severe headache and blurred vision"
+  },
+  {
+   "group": "maternal",
+   "text": "Pregnant, swollen face and hands and headache"
+  },
+  {
+   "group": "maternal",
+   "text": "She is pregnant and had a fit"
+  },
+  {
+   "group": "maternal",
+   "text": "water broke at 30 weeks"
+  },
+  {
+   "group": "maternal",
+   "text": "Pregnant woman with severe abdominal pain"
+  },
+  {
+   "group": "maternal",
+   "text": "baby has stopped moving in the womb"
+  },
+  {
+   "group": "maternal",
+   "text": "labour for more than 12 hours and baby not coming"
+  },
+  {
+   "group": "maternal",
+   "text": "high fever after delivery and smelly discharge"
+  },
+  {
+   "group": "adult",
+   "text": "Man with chest pain and sweating"
+  },
+  {
+   "group": "adult",
+   "text": "old woman suddenly can't speak and one side is weak"
+  },
+  {
+   "group": "adult",
+   "text": "snake bite on the leg in the farm"
+  },
+  {
+   "group": "adult",
+   "text": "he was bitten by a dog that was acting strangely"
+  },
+  {
+   "group": "adult",
+   "text": "motorbike accident, bleeding heavily from the head"
+  },
+  {
+   "group": "adult",
+   "text": "farmer drank weedicide"
+  },
+  {
+   "group": "adult",
+   "text": "burned badly with hot oil on the chest and arms"
+  },
+  {
+   "group": "adult",
+   "text": "young man says he wants to kill himself"
+  },
+  {
+   "group": "adult",
+   "text": "patient is vomiting blood"
+  },
+  {
+   "group": "adult",
+   "text": "severe dehydration from cholera-like diarrhoea"
+  },
+  {
+   "group": "adult",
+   "text": "struggling to breathe after bee stings"
+  },
+  {
+   "group": "child",
+   "text": "Child cannot drink",
+   "source": "external code review, Nov 2026"
+  },
+  {
+   "group": "child",
+   "text": "Child is not conscious",
+   "source": "external code review, Nov 2026"
+  },
+  {
+   "group": "newborn",
+   "text": "baby is 2 weeks old and has fever",
+   "source": "external code review, Nov 2026"
+  },
+  {
+   "group": "maternal",
+   "text": "She is bleeding a lot",
+   "source": "external code review, Nov 2026"
+  },
+  {
+   "group": "child",
+   "text": "The child collapsed and is not responding",
+   "source": "external code review, Nov 2026"
+  },
+  {
+   "group": "newborn",
+   "text": "Baby born yesterday refuses to feed",
+   "source": "external code review, Nov 2026"
+  },
+  {
+   "group": "adult",
+   "text": "He fainted at the farm and won't wake up",
+   "source": "external code review, Nov 2026"
+  },
+  {
+   "group": "child",
+   "text": "She has no energy and is convulsing",
+   "source": "external code review, Nov 2026"
+  },
+  {
+   "group": "adult",
+   "text": "He is losing a lot of blood from the cut",
+   "source": "external code review, Nov 2026"
+  },
+  {
+   "group": "newborn",
+   "text": "My one week old baby is cold to the touch",
+   "source": "external code review, Nov 2026"
+  },
+  {
+   "group": "child",
+   "text": "The child stopped breathing for a moment",
+   "source": "external code review, Nov 2026"
+  },
+  {
+   "group": "child",
+   "text": "2 children with watery diarrhoea, one very weak and not drinking.",
+   "source": "tabletop exercise review, Nov 2026"
+  },
+  {
+   "group": "child",
+   "text": "The baby has diarrhoea and isn't drinking anything since morning",
+   "source": "tabletop exercise review, Nov 2026"
+  },
+  {
+   "group": "adult",
+   "text": "She has stopped drinking and is very sleepy",
+   "source": "tabletop exercise review, Nov 2026"
+  },
+  {
+   "group": "child",
+   "text": "A child with fever, very pale palms and breathing hard",
+   "source": "Clinician question set, Nov 2026"
+  },
+  {
+   "group": "newborn",
+   "text": "New baby has stiff jaw and cannot open the mouth to suck, body goes stiff",
+   "source": "Clinician question set, Nov 2026"
+  },
+  {
+   "group": "child",
+   "text": "A mother is giving a herbal mixture to her baby who is having fits",
+   "source": "Clinician question set, Nov 2026"
+  },
+  {
+   "group": "child",
+   "text": "A 6 year old suddenly cannot move his leg, it is weak and floppy",
+   "source": "Clinician question set, Nov 2026"
+  }
+ ],
+ "routine": [
+  "Give me a talk on handwashing for mothers",
+  "How often should a pregnant woman attend antenatal care?",
+  "What should I check on a newborn home visit?",
+  "Explain malaria prevention simply",
+  "Child has a mild cough for two days, eating and playing well",
+  "How do I explain family planning options to a couple?",
+  "What is the schedule for Penta vaccines?",
+  "People say mangoes cause malaria. How do I respond?",
+  "Make a quiz on safe water",
+  "How do I store ORS sachets?",
+  "Write a note to my supervisor about stock-outs of RDT kits",
+  "What are the benefits of exclusive breastfeeding?",
+  "How do I weigh a child at child welfare clinic?",
+  "Summarise the signs of malnutrition for a health talk",
+  "Woman 6 months pregnant feeling well, what advice for diet?",
+  "How do I keep my register tidy?",
+  "Tips for talking to fathers about immunisation",
+  "What is a normal birth weight?",
+  "How to prepare for the monthly durbar",
+  "Teach me about TB follow-up visits",
+  "No chest pain, no seizures, just a mild cough",
+  "Pregnant, no bleeding, asking about iron tablets",
+  "No fever, no cough. How do I hang a mosquito net?",
+  "She denies headache. When is her next ANC visit?",
+  "He says he is not drinking alcohol any more, is that good for his blood pressure?",
+  "Some people think fits in children are caused by spirits, how do I talk about it?",
+  "The baby looks a bit pale after the cold bath, is that normal?"
+ ]
+}
